@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Judex — Decision Intelligence</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<header>
+  <h1>Judex</h1>
+  <p>Decision intelligence for filtering serious opportunities</p>
+</header>
+
+<main>
+
+  <!-- STATUS -->
+  <div id="status" class="status idle">Idle</div>
+
+  <!-- TEXT INPUT -->
+  <section class="card">
+    <h2>Paste Leads</h2>
+    <textarea id="textInput" placeholder="Paste raw messages here..."></textarea>
+    <button id="analyzeTextBtn">Analyze Text</button>
+  </section>
+
+  <!-- CSV UPLOAD -->
+  <section class="card">
+    <h2>Upload CSV</h2>
+    <input type="file" id="csvFile" accept=".csv" />
+    <button id="analyzeCsvBtn">Clean CSV</button>
+  </section>
+
+  <!-- LOGS -->
+  <section class="card">
+    <h2>Logs</h2>
+    <pre id="logs">Waiting for action…</pre>
+  </section>
+
+</main>
+
+<footer>
+  <p>Judex © Decision Intelligence</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
